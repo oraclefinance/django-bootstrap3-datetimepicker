@@ -19,7 +19,7 @@ class DateTimePicker(DateTimeInput):
     class Media:
         class JsFiles(object):
             def __iter__(self):
-                yield 'bootstrap3_datetime/js/moment.min.js'
+                # yield 'bootstrap3_datetime/js/moment.min.js' We don't need this as we are already including moment...
                 yield 'bootstrap3_datetime/js/bootstrap-datetimepicker.min.js'
                 lang = translation.get_language()
                 if lang:
